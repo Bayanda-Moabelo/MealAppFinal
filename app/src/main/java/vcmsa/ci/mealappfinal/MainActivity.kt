@@ -24,4 +24,13 @@ class MainActivity : AppCompatActivity()  {
         setupInteractions()
 
     }
+    private fun initializeComponents() {
+
+        periodInputField = findViewById(R.id.periodEntry)
+        recommendationDisplay = findViewById(R.id.recommendationText)
+        getRecommendationBtn = findViewById(R.id.fetchRecommendation)
+        clearFieldsBtn = findViewById(R.id.clearAll)
+
+    }
+
 
