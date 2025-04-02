@@ -76,6 +76,15 @@ class MainActivity : AppCompatActivity()  {
             Toast.LENGTH_LONG
         ).show()
     }
+    private fun clearAllFields() {
+        // Clear the input and reset suggestion
+        periodInputField.text.clear()
+        recommendationDisplay.text = ""
+        periodInputField.requestFocus()
+
+    }
+}
+
 
 
 
