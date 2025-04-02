@@ -67,6 +67,16 @@ class MainActivity : AppCompatActivity()  {
         recommendationDisplay.text = "We recommend: $recommendedMeal"
 
     }
+    private fun showInputError() {
+        recommendationDisplay.text = "Please enter a valid  day period"
+        periodInputField.error = "Try: 'Morning', 'Mid-morning', 'Afternoon', 'Mid-afternoon', 'Dinner', 'Dessert'"
+        Toast.makeText(
+            this,
+            "Valid options:'Morning', 'Mid-morning', 'Afternoon', 'Mid-afternoon', 'Dinner', 'Dessert'",
+            Toast.LENGTH_LONG
+        ).show()
+    }
+
 
 
 
