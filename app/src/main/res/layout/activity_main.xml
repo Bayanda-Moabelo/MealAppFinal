@@ -57,6 +57,20 @@
         app:layout_constraintTop_toBottomOf="@+id/fetchRecommendation"
         app:layout_constraintVertical_bias="0.65" />
 
+    <TextView
+        android:id="@+id/recommendationText"
+        android:layout_width="260dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="84dp"
+        android:text=""
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clearAll"
+        app:layout_constraintVertical_bias="0.777" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
