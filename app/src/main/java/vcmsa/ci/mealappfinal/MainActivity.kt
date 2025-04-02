@@ -48,6 +48,25 @@ class MainActivity : AppCompatActivity()  {
             }
         }
     }
+    private fun provideFoodRecommendation() {
+        val dayPeriod = periodInputField.text.toString().trim().lowercase()
+
+        val recommendedMeal = when (dayPeriod) {
+            "Morning" -> "Eggs and Bacon"
+            "Mid-morning" -> "Fruits"
+            "Afternoon" -> "Chicken and Tomato Sandwich"
+            "Mid-afternoon" -> "Mac and Cheese"
+            "Dinner" -> "Pasta"
+            "Dessert" -> "Malva Pudding"
+            else ->{
+                showInputError()
+                return
+            }
+        }
+
+        recommendationDisplay.text = "We recommend: $recommendedMeal"
+
+    }
 
 
 
