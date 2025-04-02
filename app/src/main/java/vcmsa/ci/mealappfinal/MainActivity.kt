@@ -32,5 +32,22 @@ class MainActivity : AppCompatActivity()  {
         clearFieldsBtn = findViewById(R.id.clearAll)
 
     }
+    private fun setupInteractions() {
+
+        getRecommendationBtn.setOnClickListener() {
+            provideFoodRecommendation()
+        }
+
+        clearFieldsBtn.setOnClickListener() {
+            clearAllFields()
+        }
+        // Set focus change listener for the time of the day input field
+        periodInputField.setOnFocusChangeListener { _, hasFocus ->
+            if (!hasFocus && periodInputField.text.isNotEmpty()) {
+                provideFoodRecommendation()
+            }
+        }
+    }
+
 
 
