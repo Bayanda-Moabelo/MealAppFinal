@@ -1,3 +1,5 @@
+Read Me File-Bayanda Moabelo
+
 Report on the Meal Recommendation Application:
 1. Purpose of the Application The Meal Recommendation Application is designed to assist users in selecting appropriate meals based on different times of the day. The application provides meal suggestions for specific periods such as morning, mid-morning, afternoon, mid-afternoon, dinner, and after dinner. By entering the time of day into the application, users receive a meal recommendation that aligns with typical dietary habits.
 This application serves multiple purposes:
